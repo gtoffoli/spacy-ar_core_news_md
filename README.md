@@ -15,9 +15,12 @@ You also need a local *git* directory to clone 2 packages from *GitHub*:
 git clone https://github.com/gtoffoli/spacy-cameltokenizer.git
 git clone https://github.com/gtoffoli/spacy-ar_core_news_md.git
 ```
-Then, in the *site-packages* directory of your *venv*, create 2 *symbolic links*:
+In the *site-packages* directory of your *venv*, create 2 *symbolic links*:
 - `cameltokenizer`, linking to the `cameltokenizer` sub-directory of the local `spacy-cameltokenizer` repository;
 - `ar_core_news_md`, linking to the `ar_core_news_md` sub-directory of the local `spacy-ar_core_news_md` repository.
+
+In the *site-packages* directory, create also the sub-directory `ar_core_news_md-1.1.0.dist-info`;
+in said sub-directory, copy the `METADATA` file from the top-level folder of the `spacy-ar_core_news_md` repository.
 
 Finally, install *spaCy* (if needed) and the *CAMeL Tools* library:
 
